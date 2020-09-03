@@ -8,6 +8,7 @@
 <body>
     <p>Simple Text</p>
     <form action="output.php" method="POST">
+        <!-- use "," to separate the numbers -->
         <input type="text" name="array_of_numbers" required>
         <input type="submit" value="Confirm">
     </form>
