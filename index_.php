@@ -1,0 +1,9 @@
+<html>
+    <body>
+        <?
+            include("header.php");
+            include("aside.php");
+            include("contend.php");
+        ?>
+    </body>
+</html>
