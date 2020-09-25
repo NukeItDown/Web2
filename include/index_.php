@@ -1,7 +1,9 @@
 <html>
+    <?
+        include("header.php");
+    ?>
     <body>
         <?
-            include("header.php");
             include("aside.php");
             include("contend.php");
         ?>
