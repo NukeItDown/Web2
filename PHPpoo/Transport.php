@@ -1,8 +1,8 @@
 <?
     abstract class Transport{
         public $model = None;
-        public $cpoh_km = NULL;
-        public $fuelcapacity = 0;
+        private $cpoh_km = NULL;
+        private $fuelcapacity = 0;
 
         public function __construct($model, $cpoh_km, $fuelcapacity){
             $this->model = $model;
@@ -20,6 +20,22 @@
 
         public function leftFuel(){
             echo "Fuel left: ". $this->fuelcapacity ."<br>";
+        }
+
+        public function max_distance(){
+            return $this->fuelcapacity/$this->cpoh_km * 100;
+        }
+
+        public function get_cpoh_km(){
+            return $this->cpoh_km;
+        }
+
+        public function get_fuelcapacity(){
+            return  $this->fuelcapacity;
+        }
+
+        public function set_fuelcapacity($amount){
+            $this->fuelcapacity += $amount;
         }
     }
 ?>

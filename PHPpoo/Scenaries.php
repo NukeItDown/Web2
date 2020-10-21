@@ -7,7 +7,7 @@
     if($avion->startRun(400)){
         echo "Avionul a decolat. <br>";
     };
-    
+
     //======= Scene 2 ======//
     $autobus = new Autobus("Mercedes", 20, 100);
     $autobus->startRun(550);
